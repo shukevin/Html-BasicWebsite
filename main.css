@@ -68,7 +68,8 @@ html, body{
 }
 
 .main-content >img{
-    width: fit-content;
+    width:fit-content;
+    max-width: 100%;
     height: fit-content;
     border: black 1px solid;
 }
