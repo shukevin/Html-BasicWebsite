@@ -105,7 +105,7 @@ html, body{
 
 @media only screen and (max-width:768px){
     .side-panel{
-        display: none;
+        height: 50%;
     }
     #search{
         display: none;
