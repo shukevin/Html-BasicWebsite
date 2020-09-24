@@ -10,16 +10,17 @@ html, body{
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background-color: rgb(24,24,27);
     z-index: 5;
+    font-size: 1em;
 
 }
 
 .navbar > a, #side-panel-button{
     display: block;
     color: whitesmoke;
-    padding: 16px 20px;
+    padding: 1.44vh 1.8vw;
     text-decoration: none;
     text-align: center;
     float: left;
@@ -43,9 +44,9 @@ html, body{
 
 #search{
     border-radius: 5px;
-    width: 30%;
-    padding: 8px 5px;
-    margin-top: 8px;
+    width: 20vw;
+    padding: .72vh .45vw;
+    margin-top: .72vh;
     border: 1px solid rgb(24,24,27);
     background-color: rgb(58,58,60);
     color: rgb(188, 188, 188);
@@ -58,26 +59,27 @@ html, body{
 }
 
 .side-panel{
-    width:0;
+    width:0vw;
     position: fixed;
-    height: 100%;
+    height: 100vh;
     top:0;
     left:0;
     z-index: 4;
     background: rgb(31,35,35);
-    overflow-x: hidden;
+    overflow-y: hidden;
     transition: .25s;
 }
 
 .side-panel-content{
-    padding: 5vh 0 0 10px;
+    padding: 5vh 0 0 1vw;
     color:whitesmoke;
 }
 
 .main-content{
     display: flex;
     flex-direction: row;
-    padding: 3% 15%;
+    font-size: 1em;
+    padding: 6vh 17vw;
 }
 
 .non-clickable{
@@ -86,6 +88,7 @@ html, body{
     -moz-user-select: none; 
     -ms-user-select: none; 
     user-select: none; 
+    font-size: 2em;
 }
 
 .side-panel-content > ul {
@@ -94,6 +97,7 @@ html, body{
 }
 
 .side-panel-content > ul > li{
-    padding-bottom: 50px;
+    padding-bottom: 5vh;
     float:left;
+    font-size: 1em;
 }
