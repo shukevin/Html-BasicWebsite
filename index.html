@@ -1,14 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Project 1</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <script src='main.js' defer></script>
 </head>
+
 <body>
-    
+
+    <div class="navbar">
+
+        <button id="side-panel-button" onclick="openPanel()">☰</button>
+        <a class="active" href="index.html">Home</a>
+        <a>News</a>
+        <a>Contact</a>
+        <a>Something idk</a>
+
+        <input type="text" id="search" placeholder="Search for x...">
+    </div>
+    <div class="side-panel" id="panel" >
+        <div class="side-panel-content">
+            <h1 class = non-clickable>Brain Parts:</h1>
+            <ul>
+                <li>
+                    Cerebrum
+                </li>
+                <li>
+                    Cerebellum
+                </li>
+                <li>
+                    Limbic System
+                </li>
+                <li>
+                    Brain Stem
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class =main-content>
+        <p>
+            This is where stuff would go!
+        </p>
+    </div>
 </body>
 </html>
