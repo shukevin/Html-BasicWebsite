@@ -62,10 +62,29 @@ html, body{
 
 .main-content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 1em;
     padding: 6vh 17vw;
 }
+
+.main-content >img{
+    width: fit-content;
+    height: fit-content;
+    border: black 1px solid;
+}
+.main-content > div{
+    padding-top: 1vh;
+    float: left;
+}
+.main-content > div> span{
+    padding-right: 5%;
+}
+.main-content > #submission{
+    margin-top: 5vh;
+    width: 10vw;
+}
+
+
 
 .non-clickable{
     pointer-events: none;
