@@ -10,7 +10,7 @@ html, body{
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     background-color: rgb(24,24,27);
     z-index: 5;
     font-size: 1em;
