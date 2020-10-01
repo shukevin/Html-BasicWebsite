@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Project 1 - Henderson-Hasselbalch</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js' defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+    <div class="navbar">
+
+
+        <button id="side-panel-button" onclick="openPanel()">☰</button>
+        <a href="index.html">Home</a>
+        <a>News</a>
+        <a href="contact.html">Contact</a>
+        <a href="list.html">Index</a>
+
+        <input type="text" id="search" placeholder="Search for x...">
+    </div>
+    <div class="side-panel" id="panel">
+        <div class="side-panel-content">
+            <h1 class=non-clickable>Available Calculators:</h1>
+            <ul>
+                <li>
+                    <a class="link" href="henderson-hasselbalch.html">Henderson-Hasselbalch</a>
+                </li>
+                <li>
+                    TBD
+                </li>
+                <li>
+                    TBD
+                </li>
+                <li>
+                    TBD
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class=main-content>
+
+        <h1 class="center"> Henderson-Hasselbalch equation  <br>\[pH = pK_{a} + log_{10}\left( \frac{[A^{-}]}{[HA]}\right )\]</h1>
+        <p>
+            The Henderson-Hasselbalch equation is primarily used to estiamte the pH of a buffer solution.
+           
+        </p>
+        <h3>Enter all known information: </h2>
+            <div id="pH">
+                <span>pH</span><br>
+                <input type="number" id="quantity" name="quantity">
+            </div>
+            <div id="pKa">
+                <span>pKa</span><br>
+                <input type="number" id="quantity" name="quantity">
+            </div>
+            <div id="Ka">
+                <span>Ka</span><br>
+                <input type="number" id="quantity" name="quantity">
+            </div>
+            <div id="H+">
+                <span>H<sup>+</sup></span><br>
+                <input type="number" id="quantity" name="quantity">
+            </div>
+            <div id="HA">
+                <span>pH</span><br>
+                <input type="number" id="quantity" name="quantity">
+            </div>
+            <div id="A-">
+                <span>A<sup>-</sup></span><br>
+                <input type="number" id="quantity" name="quantity">
+            </div>
+            <input id=submission type="submit" value="Solve!">
+
+    </div>
+</body>
+
+</html>
