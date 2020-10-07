@@ -7,7 +7,9 @@
     <title>Project 1 - Henderson-Hasselbalch</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='henderson-hasselbalch.css'>
     <script src='main.js' defer></script>
+    <script src='henderson-hasselbalch.js' defer></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
@@ -47,37 +49,45 @@
 
     <div class=main-content>
 
-        <h1 class="center"> Henderson-Hasselbalch equation  <br>\[pH = pK_{a} + log_{10}\left( \frac{[A^{-}]}{[HA]}\right )\]</h1>
+        <h1 class="center"> Henderson-Hasselbalch equation</h1>
+        <h2>\[pH = pK_{a} + log_{10}\left( \frac{[A^{-}]}{[HA]}\right
+            )\]</h2>
         <p>
-            The Henderson-Hasselbalch equation is primarily used to estiamte the pH of a buffer solution.
-           
+            The Henderson-Hasselbalch equation is primarily used to estiamte the pH of a buffer solution.<br>
+            The Conjugate Base [\(A^{-}\)] and Acid [\(HA\)] are measured in Molars \(M\).
+
+        </p>
+
+        <p>
+            How to use: Select which value to solve for, then enter information.
         </p>
         <h3>Enter all known information: </h2>
-            <div id="pH">
-                <span>pH</span><br>
-                <input type="number" id="quantity" name="quantity">
+            <div class="input-form">
+                <label for="pH">\(pH\)</label>
+                <input type="number" id="pH" readonly>
+                <input id="radio1" type="radio" name="solve" checked="checked">
+
+                <label for="pka">\(pK_{a}\)</label>
+                <input type="number" id="pka">
+                <input id="radio2" type="radio" name="solve">
+
+                <label for="a">[\(A^{-}\)]</label>
+                <input type="number" id="a">
+                <input id="radio3" type="radio" name="solve">
+
+                <label for="ha">[\(HA\)]</label>
+                <input type="number" id="ha">
+                <input id="radio4" type="radio" name="solve">
+
+
             </div>
-            <div id="pKa">
-                <span>pKa</span><br>
-                <input type="number" id="quantity" name="quantity">
-            </div>
-            <div id="Ka">
-                <span>Ka</span><br>
-                <input type="number" id="quantity" name="quantity">
-            </div>
-            <div id="H+">
-                <span>H<sup>+</sup></span><br>
-                <input type="number" id="quantity" name="quantity">
-            </div>
-            <div id="HA">
-                <span>pH</span><br>
-                <input type="number" id="quantity" name="quantity">
-            </div>
-            <div id="A-">
-                <span>A<sup>-</sup></span><br>
-                <input type="number" id="quantity" name="quantity">
-            </div>
-            <input id=submission type="submit" value="Solve!">
+
+            <p>
+                Errors and significantly small values will be set to 0.
+            </p>
+
+
+
 
     </div>
 </body>

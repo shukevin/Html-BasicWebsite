@@ -1,0 +1,42 @@
+.input-form{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    font-size: 1.6em;
+    max-width: 50%;
+    background-color: #f8f8ff;
+    padding: 10px;
+    border: solid rgb(24,24,27) 1px;
+    box-shadow:  inset;
+    border-radius: 3px;
+}
+
+input[type="number"]{
+    justify-self: right;
+    grid-column: 2;
+    background-color: whitesmoke;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    text-align: right;
+    font-size: 1em;
+    border: 1px solid black;
+}
+
+#pH{
+    background-color: lightgray;
+}
+
+
+label{
+    grid-column: 1;
+}
+
+
+
+@media only screen and (max-width:800px){
+    .input-form{
+        max-width: 100%;
+    }
+
+}

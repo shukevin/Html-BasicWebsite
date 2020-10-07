@@ -137,11 +137,22 @@ html, body{
     color:#259a7a
 }
 
+.main-content > h1{
+    max-width: 95%;
+}
+
 @media only screen and (max-width:1200px){
     .side-panel{
         display: none;
     }
     #search{
         display: none;
+    }
+
+    .MathJax{
+        max-width: 50%;
+    }
+    .main-content{
+        width: 95%;
     }
 }
