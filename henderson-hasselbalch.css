@@ -34,7 +34,7 @@ label{
 
 
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:768px){
     .input-form{
         max-width: 100%;
     }
