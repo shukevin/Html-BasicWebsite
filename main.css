@@ -2,6 +2,7 @@ html, body{
     margin:0;
     font-family: sans-serif;
     background-color: whitesmoke;
+    overflow-x: none;
 }
 
 .navbar{
@@ -154,5 +155,7 @@ html, body{
     }
     .main-content{
         width: 95%;
+        padding: 5vh 2vw;
+        
     }
 }
