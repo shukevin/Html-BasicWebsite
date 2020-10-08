@@ -141,7 +141,7 @@ html, body{
     max-width: 95%;
 }
 
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:800px){
     .side-panel{
         display: none;
     }

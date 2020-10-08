@@ -1,0 +1,51 @@
+table {
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+    width: 85%;
+}
+
+td, th {
+    padding: 5px;
+    position: relative;
+}
+tr:hover{
+    background-color: #eee;
+}
+
+ .sequence{
+    background-color:#f8f8ff;
+    width: 50%;
+    border-radius: 3px;
+    border: none;
+    text-align: left;
+    font-size: 2em;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+td:hover::after { 
+    background-color: #eee;
+    content: '\00a0';  
+    height: 10000px;    
+    left: 0;
+    position: absolute;  
+    top: -5000px;
+    width: 100%;
+    z-index: -1;        
+}
+
+#output{
+    font-size: 2em;
+}
+
+@media only screen and (max-width:800px){
+    table, #table-title{
+        display: none;
+    }
+    .sequence {
+        width: 100%;
+        text-align: left;
+    }
+
+}

@@ -19,6 +19,7 @@ var inputsValue = [
     null,
 ]
 
+
 var solve = [
     true,
     false,

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>BLOSUM 62 Substitution Matrix</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='blosum-62-substitution-matrix.css'>
+    <script src="blosum-62-substitution-matrix.js" defer></script>
     <script src='main.js' defer></script>
+
 </head>
+
 <body>
     <div class="navbar">
 
@@ -28,7 +33,7 @@
                     <a class="link" href="henderson-hasselbalch.html">Henderson-Hasselbalch</a>
                 </li>
                 <li>
-                    TBD
+                    <a class="link" href="blosum-62-substitution-matrix.html">BLOSUM-62</a>
                 </li>
                 <li>
                     TBD
@@ -41,10 +46,332 @@
     </div>
 
     <div class="main-content">
+        <h1 class="center">BLOSUM 62 Substitution Matrix</h1>
+
+        <p class="center">The BLOSUM(<strong>BLO</strong>cks <strong>SU</strong>bstitution <strong>M</strong>atrix) matrix is used for
+            sequencing the alignment of proteins</p>
+
+            <h1 id="table-title">Matrix values:</h1>
+        <table class="center">
+            <caption></caption>
+            <tbody>
+                <tr>
+                    <th class="row">A</th>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th class="row">R</th>
+                    <td>-1</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th class="row">N</th>
+                    <td>-2</td>
+                    <td>0</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th class="row">D</th>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>1</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th class="row">C</th>
+                    <td>0</td>
+                    <td>-3</td>
+                    <td>-3</td>
+                    <td>-3</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <th class="row">Q</th>
+                    <td>-1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>-3</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th class="row">E</th>
+                    <td>-1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>-4</td>
+                    <td>2</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th class="row">G</th>
+                    <td>0</td>
+                    <td>-2</td>
+                    <td>0</td>
+                    <td>-1</td>
+                    <td>-3</td>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th class="row">H</th>
+                    <td>-2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>-1</td>
+                    <td>-3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>-2</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th class="row">I</th>
+                    <td>-1</td>
+                    <td>-3</td>
+                    <td>-3</td>
+                    <td>-3</td>
+                    <td>-1</td>
+                    <td>-3</td>
+                    <td>-3</td>
+                    <td>-4</td>
+                    <td>-3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th class="row">L</th>
+                    <td>-1</td>
+                    <td>-2</td>
+                    <td>-3</td>
+                    <td>-4</td>
+                    <td>-1</td>
+                    <td>-2</td>
+                    <td>-3</td>
+                    <td>-4</td>
+                    <td>-3</td>
+                    <td>2</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th class="row">K</th>
+                    <td>-1</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>-1</td>
+                    <td>-3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>-2</td>
+                    <td>-1</td>
+                    <td>-3</td>
+                    <td>-2</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th class="row">M</th>
+                    <td>-1</td>
+                    <td>-1</td>
+                    <td>-2</td>
+                    <td>-3</td>
+                    <td>-1</td>
+                    <td>0</td>
+                    <td>-2</td>
+                    <td>-3</td>
+                    <td>-2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>-1</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th class="row">F</th>
+                    <td>-2</td>
+                    <td>-3</td>
+                    <td>-3</td>
+                    <td>-3</td>
+                    <td>-2</td>
+                    <td>-3</td>
+                    <td>-3</td>
+                    <td>-3</td>
+                    <td>-1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>-3</td>
+                    <td>0</td>
+                    <td>6</td>
+
+                </tr>
+                <tr>
+                    <th class="row">P</th>
+                    <td>-1</td>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>-1</td>
+                    <td>-3</td>
+                    <td>-1</td>
+                    <td>-1</td>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>-3</td>
+                    <td>-3</td>
+                    <td>-1</td>
+                    <td>-2</td>
+                    <td>-4</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th class="row">S</th>
+                    <td>1</td>
+                    <td>-1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>-1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>-1</td>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>0</td>
+                    <td>-1</td>
+                    <td>-2</td>
+                    <td>-1</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th class="row">T</th>
+                    <td>0</td>
+                    <td>-1</td>
+                    <td>0</td>
+                    <td>-1</td>
+                    <td>-1</td>
+                    <td>-1</td>
+                    <td>-1</td>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>-1</td>
+                    <td>-1</td>
+                    <td>-1</td>
+                    <td>-1</td>
+                    <td>-2</td>
+                    <td>-1</td>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th class="row">W</th>
+                    <td>-3</td>
+                    <td>-3</td>
+                    <td>-4</td>
+                    <td>-4</td>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>-3</td>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>-3</td>
+                    <td>-2</td>
+                    <td>-3</td>
+                    <td>-1</td>
+                    <td>1</td>
+                    <td>-4</td>
+                    <td>-3</td>
+                    <td>-2</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <th class="row">Y</th>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>-3</td>
+                    <td>-2</td>
+                    <td>-1</td>
+                    <td>-2</td>
+                    <td>-3</td>
+                    <td>2</td>
+                    <td>-1</td>
+                    <td>-1</td>
+                    <td>-2</td>
+                    <td>-1</td>
+                    <td>3</td>
+                    <td>-3</td>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>2</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th class="row">V</th>
+                    <td>0</td>
+                    <td>-3</td>
+                    <td>-3</td>
+                    <td>-3</td>
+                    <td>-1</td>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>-3</td>
+                    <td>-3</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>-2</td>
+                    <td>1</td>
+                    <td>-1</td>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>-1</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th class="col">A</th>
+                    <th class="col">R</th>
+                    <th class="col">N</th>
+                    <th class="col">D</th>
+                    <th class="col">C</th>
+                    <th class="col">Q</th>
+                    <th class="col">E</th>
+                    <th class="col">G</th>
+                    <th class="col">H</th>
+                    <th class="col">I</th>
+                    <th class="col">L</th>
+                    <th class="col">K</th>
+                    <th class="col">M</th>
+                    <th class="col">F</th>
+                    <th class="col">P</th>
+                    <th class="col">S</th>
+                    <th class="col">T</th>
+                    <th class="col">W</th>
+                    <th class="col">Y</th>
+                    <th class="col">V</th>
+
+                </tr>
 
 
-        
+
+
+            </tbody>
+
+        </table>
+
+        <h1>Sequence solver:</h1>
+        <p>Enter a string of single letter Amino Acid codes:</p>
+        <form>
+            <input class="sequence" id="sequence1"type="text">
+            <input class="sequence" id="sequence2"type="text">
+        </form>
+        <p>Identity score: <span id="output"></span></p>
+        <p>The sequence solver works by comparing two correlating amino acid codes to produce the sum amount.
+            <br> Any non-valid character will be treated as a filler(value is not added).
+        </p>
+
+
     </div>
-    
+
 </body>
+
 </html>
