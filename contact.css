@@ -1,0 +1,13 @@
+#email-button{
+    width: fit-content;
+    padding: 1.5em;
+    color: white;
+    background-color:  rgb(24,24,27);
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+}
+
+#email-button:hover{
+    color:#259a7a;
+}

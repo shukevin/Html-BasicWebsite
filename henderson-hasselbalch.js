@@ -19,7 +19,6 @@ var inputsValue = [
     null,
 ]
 
-
 var solve = [
     true,
     false,
@@ -27,6 +26,7 @@ var solve = [
     false,
 ]
 
+// Add listeners to input text, and radio button click events.
 for(let i = 0; i < inputs.length; i++){
     inputs[i].addEventListener("input", () =>{
         inputsValue[i] = inputs[i].value;
@@ -46,6 +46,7 @@ for(let i = 0; i < inputs.length; i++){
     });
 }
 
+// Solves the missing value with the given values.
 function solveValue(){
     //ph, pka, a, ha
     // ensure that all 3 inputsValue is not null
@@ -106,6 +107,7 @@ function solveValue(){
     }
 }
 
+// Returns the index of the value to be solved for pH(1), pKa(2), A(3), HA(4)
 function getSolve(){
     for(let i = 0; i < solve.length; i++){
         if(solve[i]){

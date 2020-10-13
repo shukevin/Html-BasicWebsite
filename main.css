@@ -98,7 +98,6 @@ html, body{
     -moz-user-select: none; 
     -ms-user-select: none; 
     user-select: none; 
-    font-size: 2em;
 }
 
 .side-panel{
@@ -116,8 +115,10 @@ html, body{
 
 .side-panel-content{
     padding: 5vh 0 0 1vw;
+    white-space: nowrap;
     color:whitesmoke;
 }
+
 .side-panel-content > ul {
     display: flex;
     flex-direction: column;
