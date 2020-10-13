@@ -14,7 +14,7 @@ html, body{
     width: 100%;
     background-color: rgb(24,24,27);
     z-index: 5;
-    font-size: 1em;
+    font-size: 1vw;
 
 }
 
@@ -24,6 +24,7 @@ html, body{
     padding: 1.44vh 1.8vw;
     text-decoration: none;
     text-align: center;
+    font-size: 1vw;
     float: left;
 }
 
@@ -114,20 +115,24 @@ html, body{
 }
 
 .side-panel-content{
-    padding: 5vh 0 0 1vw;
+    padding: 6vh 0 0 1vw;
     white-space: nowrap;
     color:whitesmoke;
+    font-size: 1vw;
 }
 
 .side-panel-content > ul {
     display: flex;
     flex-direction: column;
+    padding:0;
+    margin:0;
+    list-style-type: none;
 }
 
 .side-panel-content > ul > li{
     padding-bottom: 5vh;
     float:left;
-    font-size: 1em;
+
 }
 
 .link{
@@ -144,6 +149,9 @@ html, body{
 }
 
 @media (max-width:768px){
+    .navbar{
+        font-size: 1em;
+    }
     .side-panel{
         display: none;
     }
