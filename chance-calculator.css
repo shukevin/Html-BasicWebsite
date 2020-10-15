@@ -1,0 +1,47 @@
+
+.input-form{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    font-size: 1.6em;
+    gap: 5px;
+    max-width: 50%;
+}
+
+.input-form > label{
+    grid-column: 1;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+
+.input{
+    background-color:#f8f8ff;
+    grid-column: 2;
+    width: 50%;
+    border: none;
+    text-align: left;
+    font-size: 1.5em;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+
+#output{
+    font-size: 2em;
+    vertical-align: sub;
+}
+
+#warning{
+    color: red;
+}
+
+@media only screen and (max-width:768px){
+    .input {
+        width: 100%;
+        text-align: left;
+    }
+    .input-form{
+        max-width: 95%;
+    }
+
+}

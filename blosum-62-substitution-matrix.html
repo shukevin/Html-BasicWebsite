@@ -4,12 +4,13 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>BLOSUM 62 Substitution Matrix</title>
+    <title>Project 1 - BLOSUM 62 Substitution Matrix</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='blosum-62-substitution-matrix.css'>
     <script src="blosum-62-substitution-matrix.js" defer></script>
     <script src='main.js' defer></script>
+    <link rel="icon" href="images/favicon16.png">
 
 </head>
 
@@ -22,8 +23,6 @@
         <a>News</a>
         <a href="contact.html">Contact</a>
         <a href="list.html">Index</a>
-
-        <input type="text" id="search" placeholder="Search for x...">
     </div>
     <div class="side-panel" id="panel">
         <div class="side-panel-content">
@@ -36,17 +35,17 @@
                     <a class="link" href="blosum-62-substitution-matrix.html">BLOSUM-62</a>
                 </li>
                 <li>
-                    TBD
+                    <a class="link" href="binomial-formula.html">Binomial Probability</a>
                 </li>
                 <li>
-                    TBD
+                    <a class="link" href="chance-calculator.html">Chance Calculator</a>
                 </li>
             </ul>
         </div>
     </div>
 
     <div class="main-content">
-        <h1 class="center">BLOSUM 62 Substitution Matrix</h1>
+        <h1 class="center heading">BLOSUM 62 Substitution Matrix</h1>
 
         <p class="center">The BLOSUM(<strong>BLO</strong>cks <strong>SU</strong>bstitution <strong>M</strong>atrix) matrix is used for
             sequencing the alignment of proteins</p>
@@ -550,14 +549,14 @@
         </table>
 
         <h1>Sequence solver:</h1>
-        <p>Enter a string of single letter Amino Acid codes:</p>
+        <p>Enter two strings of single letter Amino Acid codes:</p>
         <form>
-            <input class="sequence" id="sequence1" type="text">
-            <input class="sequence" id="sequence2" type="text">
+            <input class="sequence" id="sequence1" type="text" spellcheck="false">
+            <input class="sequence" id="sequence2" type="text" spellcheck="false">
         </form>
         <p>Alignment number: <span id="output"></span></p>
         <p>The sequence solver works by comparing two correlating amino acid codes to produce the sum amount.
-            <br> Any non-valid character will be treated as a filler(value is not added).
+            <br> Any non-valid character will be treated as a filler(pair-value is not added).
         </p>
 
 

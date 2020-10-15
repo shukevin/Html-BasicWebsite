@@ -5,6 +5,9 @@ html, body{
     overflow-x: none;
 }
 
+.heading{
+    font-family: Verdana, Geneva, sans-serif; 
+}
 .navbar{
     margin: 0;
     padding: 1px;
@@ -30,7 +33,7 @@ html, body{
 
 .navbar > a.active{
     color: #259a7a;
-    border-bottom: 2px solid #259a7a;
+    border-bottom: .4vh solid #259a7a;
 }
 
 
@@ -150,17 +153,20 @@ html, body{
 
 @media (max-width:768px){
     .navbar{
-        font-size: 1em;
+        font-size: 16px;
+    }
+    .navbar > a, #side-panel-button{
+        font-size: 16px;
+    }
+
+    .side-panel-content{
+        font-size: 16px;
     }
     .side-panel{
         display: none;
     }
     #search{
         display: none;
-    }
-
-    .MathJax{
-        max-width: 50%;
     }
     .main-content{
         width: 95%;

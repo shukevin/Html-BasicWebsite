@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Project 1 - Chance Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='chance-calculator.css'>
+    <script src="chance-calculator.js" defer></script>
+    <script src='main.js' defer></script>
+    <link rel="icon" href="images/favicon16.png">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+    <div class="navbar">
+
+
+        <button id="side-panel-button" onclick="openPanel()">☰</button>
+        <a href="index.html">Home</a>
+        <a>News</a>
+        <a href="contact.html">Contact</a>
+        <a href="list.html">Index</a>
+    </div>
+    <div class="side-panel" id="panel">
+        <div class="side-panel-content">
+            <h3 class=non-clickable>Available Calculators:</h3>
+            <ul>
+                <li>
+                    <a class="link" href="henderson-hasselbalch.html">Henderson-Hasselbalch</a>
+                </li>
+                <li>
+                    <a class="link" href="blosum-62-substitution-matrix.html">BLOSUM-62</a>
+                </li>
+                <li>
+                    <a class="link" href="binomial-formula.html">Binomial Probability</a>
+                </li>
+                <li>
+                    <a class="link" href="chance-calculator.html">Chance Calculator</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1 class="center heading">Chance Calculator</h1>
+
+        <h2 class="center">\[1 - (1-P(A))^n\]</h2>
+
+        <p>The chance calculator solves for the odds of an event occurring atleast once with \(P(A)\) chance after \(n\) attempts.</p>
+        <p>
+            This can be used to see how lucky/unlucky you might be for an probability based event to occur.<br>
+            For example: In video games, if an item has a 1% drop chance, and you loot 100 times, you are \(1 - (1-.01)^{100} = ~0.63397 \) (63.397%) probable to get it 
+        </p>
+        <h1>Chance solver:</h1>
+        <p>Enter corresponding values:</p>
+        <form class = "input-form">
+            <label for="pa">\(P(A)\)</label>
+            <input class="input" id="pa" type="number" spellcheck="false">
+            <label for="n">\(n\)</label>
+            <input class="input" id="n" type="number" spellcheck="false">
+        </form>
+        <p>Odds of event \(A\) occurring: <span id="output"></span>%</p>
+        <span id="warning"></span>
+
+
+
+    </div>
+
+</body>
+
+</html>
