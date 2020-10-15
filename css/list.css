@@ -1,0 +1,41 @@
+.buttons{
+    display: grid;
+    grid-template-columns: 12vw auto;
+    gap: 10px;
+}
+
+.link-button{
+    grid-column: 1;
+    font-size: 1vw;
+    color: white;
+    height: 5vh;
+    background-color:  rgb(24,24,27);
+    padding: 1vh 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: auto 0;
+    width: 120px;
+
+}
+
+.link-button:hover{
+    color:#259a7a;
+}
+
+.buttons > p{
+    grid-column: 2;
+}
+
+@media only screen and (max-width:768px){
+    .buttons{
+        grid-template-columns: 130px auto;
+        padding: 0;
+    }
+    .link-button{
+        font-size: 16px;
+        padding: 4vh 2vw;
+    }
+
+}

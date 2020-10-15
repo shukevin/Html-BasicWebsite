@@ -6,8 +6,9 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Project 1 - Index</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js' defer></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/list.css'>
+    <script src='js/main.js' defer></script>
     <link rel="icon" href="images/favicon16.png">
 </head>
 
@@ -21,9 +22,9 @@
         <a href="contact.html">Contact</a>
         <a class="active" href="list.html">Index</a>
     </div>
-    <div class="side-panel" id="panel" >
+    <div class="side-panel" id="panel">
         <div class="side-panel-content">
-            <h3 class = non-clickable>Available Calculators:</h3>
+            <h3 class=non-clickable>Available Calculators:</h3>
             <ul>
                 <li>
                     <a class="link" href="henderson-hasselbalch.html">Henderson-Hasselbalch</a>
@@ -41,16 +42,26 @@
         </div>
     </div>
 
-    <div class ="main-content">
-
+    <div class="main-content">
         <h1 class="center heading">Calculator Index:</h1>
-        <p><a href="henderson-hasselbalch.html">Henderson-Hasselbalch</a></p>
-        <p><a href="blosum-62-substitution-matrix.html">BLOSUM-62</a></p>
-        <p><a href="binomial-formula.html">Binomial Probability</a></p>
-        <p><a href="chance-calculator.html">Chance Calculator</a></p>
+        <div class="buttons">
 
+            <a class="link-button" href="binomial-formula.html">Binomial Probability</a>
+            <p>Used to gauge the probability of an event's occurrence.<br>
+            Find more information <a href="https://en.wikipedia.org/wiki/Binomial_theorem" target="_blank">here</a></p>
+            <a class="link-button" href="blosum-62-substitution-matrix.html" >BLOSUM-62</a>
+            <p>Used to sequence the alignment of proteins.<br>
+                Find more information <a href="https://en.wikipedia.org/wiki/BLOSUM" target="_blank">here</a></p>
+            <a class="link-button" href="chance-calculator.html">Chance Calculator</a>
+            <p>Used to calculate the probability of a single event's occurrence.<br>
+                Find more information <a href="https://en.wikipedia.org/wiki/Almost_surely" target="_blank">here</a></p>
+            <a class="link-button" href="henderson-hasselbalch.html">Henderson-Hasselbalch</a>
+            <p>Used to estimate the pH of a buffer solution.<br>
+                Find more information <a href="https://en.wikipedia.org/wiki/Henderson%E2%80%93Hasselbalch_equation" target="_blank">here</a></p>
+        </div>
 
 
     </div>
 </body>
+
 </html>
