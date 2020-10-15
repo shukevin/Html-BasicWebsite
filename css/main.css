@@ -64,8 +64,6 @@ html, body{
     border:1px solid #259a7a;
 }
 
-
-
 .main-content{
     display: flex;
     flex-direction: column;
@@ -149,6 +147,12 @@ html, body{
 
 .main-content > h1{
     max-width: 95%;
+}
+
+#picture{
+    max-width: 30%;
+    border: none;
+    
 }
 
 @media (max-width:768px){
